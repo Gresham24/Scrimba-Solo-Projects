@@ -54,6 +54,12 @@ h1 {
     color: #6B7280;
 }
 
+input[type="search"] {
+    font: var(--placeholer-ff); 
+    font-weight: 500;
+    color: black;
+}
+
 .search-btn {
     font: var(--btn-ff);
     font-weight: 500;
