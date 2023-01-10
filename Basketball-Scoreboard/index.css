@@ -1,0 +1,183 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ============================
+
+            CUSTOM VARIABLES
+
+=============================== */
+
+:root {
+    /**** colors ****/
+    --white: #EEEEEE;
+    --navy: #1B244A;
+    --light-blue: #9AABD8;
+    --red: #F94F6D;
+    --black: #080001;
+    --green: rgb(43, 255, 0);
+    /**** font ****/
+    --h1-ff: normal 700 4rem/3.5rem 'Verdana';
+    --score-ff: normal 9rem/12.6rem 'Cursed Timer ULiL', sans-serif;
+    --btn-ff: normal 1.8rem/2.7rem 'Cursed Timer ULiL', sans-serif;
+}
+
+
+/* ============================
+
+            TYPOGRAPHY
+
+=============================== */
+
+h1 {
+    font: var(--h1-ff);
+    color: var(--white);
+    text-align: center;
+}
+
+.score {
+    font: var(--score-ff);
+    color: var(--red);
+}
+
+.add-btn {
+    font: var(--btn-ff);
+    color: var(--light-blue);
+}
+
+.reset-btn {
+    font: normal 700 1.2rem 'Verdana';
+    letter-spacing: 1.5px;
+}
+
+/* ============================
+
+            BUTTONS
+
+=============================== */
+
+.add-btn {
+    background-color: var(--navy);
+    border: solid 2px var(--light-blue);
+    border-radius: .5rem;
+    padding: .8rem;
+}
+
+.add-btn:hover {
+    cursor: pointer;
+    background-color: #313c6f;
+    color: white;
+}
+
+.add-btn:active {
+    background-color: #1e2d70;
+}
+
+.reset-btn {
+    background-color: white;
+    border: none;
+    border-radius: 2.8rem;
+    padding: 1rem;
+}
+
+.reset-btn:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+.reset-btn:active {
+    background-color: rgb(255, 111, 111);
+}
+
+/* ============================
+
+            LAYOUT
+
+=============================== */
+
+body {
+    background-color: var(--navy);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 37.5rem;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+
+.score-container {
+    background-color: var(--black);
+    text-align: center;
+    border-radius: .5rem;
+    min-width: 15.5rem;
+}
+
+.home-button-wrapper,
+.guest-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-scoreboard,
+.guest-scoreboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+
+
+
+
+/* ============================
+
+            MEDIA QUERIES
+
+=============================== */
+
+/*===== DESKTOP & TABLET MODE =====*/
+@media (min-width: 610px) {
+
+    .container {
+        flex-direction: row;
+        gap: 0;
+        height: 100vh;
+    }
+
+    .button-wrapper {
+        justify-content: space-around;
+
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    .add-btn {
+        font-size: 2.4rem;
+    }
+
+    .reset-btn {
+        font-size: 1.4rem;
+        padding: 1.4rem;
+    }
+
+    .home-scoreboard,
+    .guest-scoreboard {
+        gap: 3rem;
+    }
+
+}

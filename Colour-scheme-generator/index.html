@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+    <title>Solo Project - Colour scheme generator</title>
+
+    <script src="index.js" defer></script>
+
+</head>
+
+<body>
+    <main>
+        <h1>Colour Scheme Generator</h1>
+        <section>
+            <div class="inputs-wrapper">
+                <input id="seed-col" name="seed-col" type="color" value="#d7abab" />
+                <select id="col-scheme" name="col-scheme">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button id="col-scheme-generator">Get colour scheme</button>
+            </div>
+            <div class="col-block-wrapper">
+                <!-- color blocks displayed here  -->
+            </div>
+            <div class="hex-value-wrapper">
+                <!-- Hex Values of colors displayed here-->
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

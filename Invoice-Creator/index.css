@@ -1,0 +1,277 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**** Reset the root font size to 10px. To make  1.6rem = 10px ****/
+html {
+    font-size: 62.5%;
+}
+
+/* ============================
+
+            CUSTOM VARIABLES
+
+=============================== */
+
+:root {
+    /**** colors ****/
+    --blue: #3a69d2;
+    --baby-blue: #d1d4f4;
+    --navy: #1f2937;
+    --purple: #4a4e74;
+    --grey: #d5d4d8;
+    --light-grey: #f5f5f5;
+    --black: #1c1c1c;
+    /**** font ****/
+    --h1-ff: normal 700 4rem 'Inter';
+    --item-ff: normal 700 2rem/2rem 'Inter';
+    --sml-heading: normal 700 1.2rem/2rem 'Inter';
+    --p-ff: normal 400 1.6rem 'Inter';
+    --prices: normal 500 2.4rem/2rem 'Inter';
+    --btn-ff: normal 500 1.4rem 'Inter';
+    --remove-btn: normal 400 0.8rem/2rem 'Inter';
+    /**** shadow ****/
+    --submit-shadow: 0px 1px 2px 0px #0000000d;
+}
+
+
+/* ============================
+
+            TYPOGRAPHY
+
+=============================== */
+h1 {
+    font: var(--h1-ff);
+    margin-bottom: 0.9rem;
+    margin-top: 0;
+}
+
+header p {
+    font: var(--p-ff);
+}
+
+.item-headings,
+.summary-headings {
+    font: var(--sml-heading);
+}
+
+.item {
+    font: var(--item-ff);
+}
+
+.price {
+    font: var(--prices);
+}
+
+.button-wrapper button,
+.send-button {
+    font: var(--btn-ff);
+}
+
+.remove-button {
+    font: var(--remove-btn);
+}
+
+.invoice-summary p {
+    font: var(--p-ff);
+}
+
+/* ============================
+
+            BUTTONS
+
+=============================== */
+
+.button-wrapper button {
+    padding: 0.9rem 1.3rem;
+    border-radius: 7px;
+    border: solid 2.5px transparent;
+    background-color: var(--baby-blue);
+    color: var(--purple);
+    cursor: pointer;
+}
+.button-wrapper button:hover {
+    border: solid 2.5px white;
+}
+.button-wrapper button:active {
+    background-color: #a9addb;
+}
+
+
+.remove-button {
+    border: none;
+    background: none;
+    color: var(--grey);
+    cursor: pointer;
+}
+.remove-button:hover {
+    font-size: .9rem;
+    color: red;
+}
+.remove-button:active {
+    color: rgb(187, 0, 0);
+}
+
+.send-button {
+    color: white;
+    background-color: var(--blue);
+    box-shadow: 0px 1px 2px 0px #0000000d;
+    border-radius: 7px;
+    border-style: none;
+    padding: 1em 1.7em;
+    display: block;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+.send-button:hover {
+    background-color: #4175e7;
+}
+.send-button:active {
+    background-color: var(--blue);
+}
+
+.mail-icon {
+    height: 20px;
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+}
+
+/* ============================
+
+            LAYOUT
+
+=============================== */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.card {
+    border: 5px solid black;
+    border-radius: 12px;
+    max-width: 550px;
+}
+
+/****** header ******/
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 5em 10em;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 7px 7px 0px 0px;
+}
+
+/****** main body ******/
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 4em;
+    background-color: var(--navy);
+    border-radius: 0px 0px 7px 7px;
+}
+
+.button-wrapper button {
+    margin: 0 0.4em;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+    header {
+        padding: 5em 3em;
+        text-align: center;
+    }
+
+    .button-wrapper {
+        flex-direction: column;
+    }
+}
+
+
+.item-headings,
+.summary-headings {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    color: var(--grey);
+    margin-top: 2em;
+}
+
+.line-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remove-button {
+    display: block;
+}
+
+.item {
+    margin-right: 1em;
+    color: var(--light-grey);
+}
+
+.price {
+    text-align: right;
+    color: var(--light-grey);
+}
+
+.currency {
+    color: grey;
+    font-weight: 300;
+}
+
+.price {
+    flex-grow: 1;
+}
+
+.item,
+.remove-button,
+.price {
+    margin-top: 2rem;
+}
+
+.solid-line {
+    border: solid 1px var(--grey);
+    margin: 3em 0 1em;
+}
+
+/****** summary section ******/
+
+.summary-headings {
+    margin-top: 1em;
+    font-weight: 600;
+    color: var(--grey);
+}
+
+.invoice-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.invoice-summary p {
+    color: var(--grey);
+    font-size: 1.2rem;
+}
+
+.invoice-summary .total-amount {
+    font: 600 3.6rem 'Inter';
+}

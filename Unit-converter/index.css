@@ -1,0 +1,50 @@
+body {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: rgb(171, 171, 237);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: auto;
+    max-width: 550px;
+    background: linear-gradient(246.26deg,
+            #585DFE 0%,
+            #FB3796 100%);
+    border: solid 5px white;
+    border-radius: 20px;
+
+}
+
+h1 {
+    font-size: 22px;
+    line-height: 38px;
+    letter-spacing: -0.05em;
+}
+
+h2 {
+    font-size: 97.5723px;
+    line-height: 24px;
+}
+
+#lengthResult,
+#volumeResult,
+#massResult {
+    color: grey;
+}
+
+.unitsContainer {
+    font-weight: 400;
+    font-size: 16px;
+    background: #1F2937;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+}

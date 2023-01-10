@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Karla:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/ad1f99e0dc.js" crossorigin="anonymous"></script>
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="headings">
+            <h1>Generate a <br> <span class="greenText">random password</span></h1>
+            <p>Never use an insecure password again.</p>
+        </div>
+        <form>
+            <label class="formTitle">Enter password length:</label>
+            <input id="passwordLength" type="number" min="1" max="18" placeholder="0"> <br>
+            <button type="button" id="generatorBtn">Generate passwords</button>
+        </form>
+        <div class="dividerLine"></div>
+        <div class="passwordSuggestions">
+            <div class="password"><i class="fas fa-ellipsis-h"></i></div>
+            <div class="password"><i class="fas fa-ellipsis-h"></i></div>
+            <div class="password"><i class="fas fa-ellipsis-h"></i></div>
+            <div class="password"><i class="fas fa-ellipsis-h"></i></div>
+            <div class="password"><i class="fas fa-ellipsis-h"></i></div>
+            <div class="password"><i class="fas fa-ellipsis-h"></i></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

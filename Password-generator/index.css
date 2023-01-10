@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-style: normal;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Karla';
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: -0.05em;
+}
+
+.greenText {
+    color: #10B981;
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #6B7280;
+}
+
+/* Form content styling */
+#passwordLength {
+    width: 50px;
+    margin-left: 5px;
+    height: 42px;
+    border-radius: 6px;
+    border: solid 1px;
+    text-align: center;
+
+}
+
+.formTitle {
+    font-size: 16px;
+    color: #273549;
+    font-weight: 600;
+}
+
+/* Button styling */
+#generatorBtn {
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #10B981;
+    border-radius: 6px;
+    border-style: none;
+    padding: 10px 20px 12px 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#generatorBtn::before {
+    content: url(Lightning-bolt.svg);
+    position: relative;
+    padding-right: 10px;
+    top: 3px;
+}
+
+.card {
+    background: #ECFDF5;
+    border: solid 5px;
+    border-radius: 20px;
+    width: 470px;
+    min-height: 550px;
+    padding: 0px 15px 20px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.dividerLine {
+    border: 1px solid #D5D4D8;
+    width: 446px;
+}
+
+.password {
+    color: #5DEF92;
+    min-width: 200px;
+    height: 100%;
+    background: #273549;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+}
+
+.passwordSuggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    overflow-wrap: break-word;
+}
+
+i {
+    opacity: 50%;
+    color: #6B7280;
+    font-size: 18px;
+}

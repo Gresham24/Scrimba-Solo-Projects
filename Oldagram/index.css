@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ============================
+
+            CUSTOM VARIABLES
+
+=============================== */
+
+:root {
+    /******** colors ********/
+    --off-white: #EDEDED;
+    --grey: #C6C6C6;
+    --black: #000000;
+    /******** font ********/
+    --username-ff: normal 700 1.3rem/1.6rem 'Source Sans Pro';
+    --location-ff: normal 400 1.2rem/1.5rem 'Source Sans Pro';
+    --desc-ff: normal 400 1.3rem/1.6rem 'Source Sans Pro';
+}
+
+/* ============================
+
+            TYPOGRAPHY
+
+=============================== */
+
+.username,
+.likes,
+.name {
+    font: var(--username-ff);
+}
+
+.location {
+    font: var(--location-ff);
+}
+
+.username-caption {
+    font: var(--desc-ff);
+}
+
+
+
+/* ============================
+
+            IMAGES
+
+=============================== */
+
+.logo {
+    height: 6rem;
+}
+
+.avatar-img {
+    height: 3.4rem;
+    border-radius: 2.8rem;
+}
+
+.post-image {
+    width: 36.5rem;
+}
+
+button img {
+    height: 2.2rem;
+}
+
+/* ============================
+
+            BUTTONS
+
+=============================== */
+
+.post-button-wrapper button {
+    border: none;
+    background-color: transparent;
+}
+
+.post-button-wrapper button:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.post-image:hover {
+cursor: pointer;
+}
+
+/* ============================
+
+            LAYOUT
+
+=============================== */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--grey);
+    width: 37.5rem;
+    background-color: white;
+    border: solid 5px;
+    border-radius: 1rem;
+    margin: 3rem auto;
+}
+
+.feed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid .1rem var(--grey);
+    padding: 0.5rem 1.5rem;
+}
+
+main header {
+    display: flex;
+    gap: .7rem;
+    padding: 1rem;
+}
+
+.post-details {
+    padding: 2.1rem 0 1rem 1rem;
+    border-bottom: solid 2.5rem #EDEDED;
+}
+
+.username-caption,
+.likes  {
+    margin-top: 1.2rem;
+}
+
+

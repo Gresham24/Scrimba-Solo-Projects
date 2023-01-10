@@ -1,0 +1,148 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ============================
+
+            CUSTOM VARIABLES
+
+=============================== */
+
+:root {
+    /**** colors ****/
+    --outline-grey: #D1D5DB;
+    --light-grey: #E5E5E5;
+    --mid-grey: #9CA3AF;
+    --btn-black: #374151;
+    --font-black: #111827;
+    --hex-value-black: #2B283A;
+    --bg-black: #1C1C1C;
+    /**** font ****/
+    --h1-ff: normal 700 3rem/3rem 'Inter', sans-serif;
+    --dropdown-ff: normal 400 1.6rem/2.4rem 'Inter', sans-serif;
+    --btn-ff: normal 500 1.2rem/1.6rem 'Inter', sans-serif;
+    --hex-ff: normal 500 1.2rem/2.4rem 'Inter', sans-serif;
+    --shadow: 0px 1px 2px 0px hsla(0, 0%, 0%, 0.05);
+}
+
+
+/* ============================
+
+            TYPOGRAPHY
+
+=============================== */
+
+h1 {
+    font: var(--h1-ff);
+    color: white;
+}
+
+button {
+    font: var(--btn-ff);
+    color: var(--btn-black);
+}
+
+.hex-value-wrapper {
+    font: var(--hex-ff);
+    color: var(--hex-value-black);
+}
+
+#col-scheme {
+    font: var(--dropdown-ff);
+    color: var(--font-black);
+}
+
+/* ============================
+
+            BUTTONS
+
+=============================== */
+
+button {
+    padding: 1.3rem 1.1rem;
+    background-color: white;
+    border: solid 1px var(--outline-grey);
+    box-shadow: var(--shadow);
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(240, 240, 240);
+}
+
+#seed-col {
+    border: none;
+    width: 6rem;
+    height: 4.2rem;
+    cursor: pointer;
+}
+
+#col-scheme {
+    padding: 1rem 1.3rem;
+    width: 50%;
+    cursor: pointer;
+}
+
+/* ============================
+
+            LAYOUT
+
+=============================== */
+
+body {
+    background-color: #353535;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c89898; 
+    height: 100vh;
+}
+
+section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 55rem;
+}
+
+.inputs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.4rem 1.2rem;
+    gap: 1.5rem;
+    min-width: 55rem;
+}
+
+.col-block-wrapper {
+    display: flex;
+}
+
+.col-block-wrapper div {
+    width: 11rem;
+    height: 41.4rem;
+    justify-content: space-around;
+}
+
+.hex-value-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2.8rem;
+}
+
+.hex-value-wrapper p:hover {
+    color: black;
+}
