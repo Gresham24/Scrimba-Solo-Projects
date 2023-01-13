@@ -54,7 +54,7 @@ h1 {
 .search-btn {
     font: var(--btn-ff);
     font-weight: 500;
-    color: var(--light-grey);
+    color: #374151;
 }
 
 .placeholder-content p {
@@ -69,7 +69,19 @@ h1 {
 
 =============================== */
 
+.watchlist-search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
+.search-btn {
+    background-color: #F9FAFB;
+    border: solid 1px #D1D5DB;
+    cursor: pointer;
+    border-radius: 0 .6rem .6rem 0;
+    padding: .9rem 1.1rem .9rem 1.7rem;
+}
 
 
 /* ============================
