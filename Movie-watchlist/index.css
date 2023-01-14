@@ -20,12 +20,14 @@ html {
     /**** colors ****/
     --pitch-black: #1C1C1C;
     --light-grey: #DFDDDD;
-    /**** font ****/
+    /**** fonts ****/
     --h1-ff: normal 800 4.2rem/2.3rem 'Inter';
     --btn-ff: normal 700 1.4rem/2rem 'Inter';
     --placeholer-ff: normal 500 1.4rem/2rem 'Inter';
     --h3-ff: normal 500 1.8rem/2rem 'Inter';
     --p-ff: normal 400 1.4rem/2rem 'Inter';
+    /**** shadows ****/
+    --input-shadow: box-shadow: 0px .1rem .2rem 0px #0000000D;
 }
 
 
@@ -46,9 +48,9 @@ h1 {
 }
 
 .search-input::placeholder {
-    font: var(--placeholer-ff);
-    color: var(--light-grey);
-
+    font: var(--placeholer-ff); 
+    font-weight: 500;
+    color: #6B7280;
 }
 
 .search-btn {
@@ -77,12 +79,31 @@ h1 {
 
 .search-btn {
     background-color: #F9FAFB;
-    border: solid 1px #D1D5DB;
+    border: none;
+    border-left: solid 1px #D1D5DB;
     cursor: pointer;
-    border-radius: 0 .6rem .6rem 0;
+    /* border-radius: 0 .6rem .6rem 0; */
     padding: .9rem 1.1rem .9rem 1.7rem;
 }
 
+
+/* ============================
+
+            INPUTS
+
+=============================== */
+
+.search-input {
+    padding: .9rem 1.3rem .9rem 1.3rem;
+    height: 3.8rem;
+    box-shadow: var(--input-shadow);
+    border-radius: .6rem;
+    border: solid 1px #D1D5DB;
+}
+
+.search-input::placeholder::before {
+    content: url('/images/search-icon.svg');
+}
 
 /* ============================
 
@@ -101,10 +122,13 @@ h1 {
 
 body {
     background-color: var(--pitch-black);
+    height: 100vh;
 }
 
 
-
+main {
+    height: 100%;
+}
 
 /* ============================
 
