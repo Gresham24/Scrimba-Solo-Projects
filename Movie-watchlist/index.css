@@ -132,9 +132,7 @@ main {
     margin: 5rem auto;
     max-width: 80rem;
     background-color: white;
-    /* height: 100vh; */
     min-height: 80rem;
-    
 }
 
 main > * {
@@ -152,8 +150,22 @@ header {
 .search-wrapper {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 4.4rem;
+    margin-top: -2rem;
+
 }
 
+.film-list-wrapper {
+    margin: 0 auto;
+    height: 50rem;
+}
+
+.placeholder-content {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    top: 15rem;
+}
 
 
 /* ============================
