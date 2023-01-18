@@ -61,10 +61,15 @@ h1 {
 }
 
 .placeholder-content p {
-    font: var(--p-ff);
+    font: var(--h3-ff);
+    font-weight: 700;
     color: var(--light-grey);
 }
 
+.add-movie-btn {
+    font: var(--btn-ff);
+    color: #363636;
+}
 
 /* ============================
 
@@ -85,9 +90,14 @@ h1 {
     cursor: pointer;
     padding: .9rem 1.1rem .9rem 1.7rem;
     position: relative;
-    
 }
 
+.add-movie-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+}
 
 /* ============================
 
