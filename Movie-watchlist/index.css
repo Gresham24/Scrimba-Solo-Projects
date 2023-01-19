@@ -60,7 +60,8 @@ h1 {
     color: #374151;
 }
 
-.placeholder-content p {
+.search-placeholder-content, 
+.watchlist-placeholder-content p {
     font: var(--h3-ff);
     font-weight: 700;
     color: var(--light-grey);
@@ -96,7 +97,12 @@ h1 {
     border: none;
     background: none;
     cursor: pointer;
-    
+    padding-top: 1.5rem;
+}
+
+.add-movie-btn::before {
+    content: '';
+    /* background-image: url('images/add-icon.svg'); */
 }
 
 /* ============================
@@ -113,8 +119,8 @@ h1 {
     width: 100%;
 }
 
-.search-input::placeholder::after {
-    content: url("/images/search-icon.svg");
+.search-input::placeholder::before {
+    content: url("/images/search-icon.png");
 }
 
 /* ============================
@@ -170,7 +176,8 @@ header {
     height: 50rem;
 }
 
-.placeholder-content {
+.search-placeholder-content,
+.watchlist-placeholder-content {
     text-align: center;
     height: 100%;
     position: relative;
