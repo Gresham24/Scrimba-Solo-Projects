@@ -18,7 +18,8 @@ html {
 
 :root {
     /**** colors ****/
-    --grey: ;
+    --pitch-black: #1C1C1C;
+    --light-grey: #DFDDDD;
     /**** font ****/
     --h1-ff: ;
     --shadow: ;
