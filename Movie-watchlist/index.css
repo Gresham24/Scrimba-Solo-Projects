@@ -21,8 +21,11 @@ html {
     --pitch-black: #1C1C1C;
     --light-grey: #DFDDDD;
     /**** font ****/
-    --h1-ff: ;
-    --shadow: ;
+    --h1-ff: normal 800 4.2rem/2.3rem 'Inter';
+    --bt-ff: normal 700 1.4rem/2rem 'Inter';
+    --placeholer-ff: normal 500 1.4rem/2rem 'Inter';
+    --h3-ff: normal 500 1.8rem/2rem 'Inter';
+    --p-ff: normal 400 1.4rem/2rem 'Inter';
 }
 
 
@@ -33,11 +36,15 @@ html {
 =============================== */
 
 
+
+
 /* ============================
 
             BUTTONS
 
 =============================== */
+
+
 
 
 /* ============================
@@ -47,11 +54,15 @@ html {
 =============================== */
 
 
+
+
 /* ============================
 
             LAYOUT
 
 =============================== */
+
+
 
 
 
