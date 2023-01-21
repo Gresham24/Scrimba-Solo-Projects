@@ -84,6 +84,10 @@ h1 {
     cursor: pointer;
 }
 
+.watchlist-search-btn:active{
+    color: #adadad;
+}
+
 .search-btn {
     background-color: #F9FAFB;
     border: solid 1px #D1D5DB;
@@ -91,6 +95,10 @@ h1 {
     cursor: pointer;
     padding: .9rem 1.1rem .9rem 1.7rem;
     position: relative;
+}
+
+.search-btn:active{
+    background-color: #f2f2f2;
 }
 
 .add-movie-btn {
@@ -101,9 +109,12 @@ h1 {
 }
 
 .add-movie-btn::before {
-    content: '';
-    /* background-image: url('images/add-icon.svg'); */
+    content: url('images/add-icon.png');
+    position: relative;
+    margin-right: 0.5em;
+    top: .4rem;
 }
+
 
 /* ============================
 
