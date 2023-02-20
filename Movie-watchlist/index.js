@@ -43,17 +43,19 @@ fetch('http://www.omdbapi.com/?i=tt3896198&apikey=42f3cd82')
             EVENT LISTENERS
 =============================== */
 
-const searchInput = document.querySelector("input[type='search']");
-console.log(searchInput.value);
-const searchValue = searchInput.value;
 
-document.getElementById('search-btn').addEventListener('click', function () {
-    console.log('test print');
-    console.log(searchValue);
+
+const searchInput = document.querySelector("input[type='search']");
+
+document.getElementById('search-btn').addEventListener('click', function (event) {
+    event.preventDefault();
+    const searchValue = searchInput.value;
+
+    console.log(searchValue); // Test
 })
 
 
-// Switch between pages
+/**** Switch between pages ****/ 
 watchlistBtn.addEventListener('click', function () {
     window.location.href = 'watchlist.html';
 });
